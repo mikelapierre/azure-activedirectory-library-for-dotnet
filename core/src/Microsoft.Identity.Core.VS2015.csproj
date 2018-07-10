@@ -104,6 +104,8 @@
     <Compile Include="Exceptions\**\*.cs" />
     <Compile Include="Telemetry\**\*.cs" />
     <Compile Include="OAuth2\**\*.cs" />
+    <Compile Include="Realm\**\*.cs" />
+    <Compile Include="WsTrust\**\*.cs" />
     <Compile Include="Cache\**\*.cs" />
     <Compile Include="Properties\**\*.cs" />
     <Compile Include="Internal\**\*.cs" />
