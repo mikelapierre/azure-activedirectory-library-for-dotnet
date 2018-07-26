@@ -135,13 +135,6 @@ namespace Microsoft.Identity.Client.Internal.Requests
                 }
                 else if (string.Compare(userRealmResponse.AccountType, "managed", StringComparison.OrdinalIgnoreCase) == 0)
                 {
-                    /*
-                    // handle password grant flow for the managed user
-                    if (UserCredential.PasswordToCharArray() == null)
-                    {
-                        throw new MsalException(MsalError.PasswordRequiredForManagedUserError);
-                    }
-                    */
                 }
                 else
                 {
@@ -158,12 +151,6 @@ namespace Microsoft.Identity.Client.Internal.Requests
                 client.AddBodyParameter(OAuth2Parameter.GrantType, UserAssertion.AssertionType);
                 client.AddBodyParameter(OAuth2Parameter.Assertion, Convert.ToBase64String(Encoding.UTF8.GetBytes(UserAssertion.Assertion)));
             }
-            /*
-            else
-            {
-                this.userCredential.ApplyTo(requestParameters);
-            }
-            */
         }
     }
 }
