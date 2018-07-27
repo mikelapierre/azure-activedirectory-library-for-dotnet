@@ -72,14 +72,14 @@ namespace Microsoft.Identity.Client
 
 #if WINRT
 /// <summary>
-///
+/// 
 /// </summary>
         public bool UseCorporateNetwork { get; set; }
 #endif
 
 #if !ANDROID
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <returns>Authentication result containing token of the user</returns>
@@ -93,7 +93,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -108,7 +108,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -125,7 +125,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -143,7 +143,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -161,7 +161,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -181,7 +181,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -202,7 +202,7 @@ namespace Microsoft.Identity.Client
 #endif
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="parent">Object contains reference to parent window/activity. REQUIRED for Xamarin.Android only.</param>
@@ -217,7 +217,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -233,7 +233,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -251,7 +251,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -270,7 +270,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -289,7 +289,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="loginHint">Identifier of the user. Generally a UPN.</param>
@@ -310,7 +310,7 @@ namespace Microsoft.Identity.Client
         }
 
         /// <summary>
-        /// Interactive request to acquire token.
+        /// Interactive request to acquire token. 
         /// </summary>
         /// <param name="scopes">Array of scopes requested for resource</param>
         /// <param name="user">User object to enforce the same user to be authenticated in the web UI.</param>
@@ -367,7 +367,7 @@ namespace Microsoft.Identity.Client
 
         internal IWebUI CreateWebAuthenticationDialog(UIParent parent, UIBehavior behavior, RequestContext requestContext)
         {
-            //create instance of UIParent and assign useCorporateNetwork to UIParent
+            //create instance of UIParent and assign useCorporateNetwork to UIParent 
             if (parent == null)
             {
                 parent = new UIParent();
