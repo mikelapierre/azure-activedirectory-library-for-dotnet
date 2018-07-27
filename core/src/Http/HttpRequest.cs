@@ -83,22 +83,6 @@ namespace Microsoft.Identity.Core.Http
             return requestMessage;
         }
 
-        private static async Task<HttpContent> DeepCopy(HttpContent content)
-        {
-            var temp = new System.IO.MemoryStream();
-            await content.CopyToAsync(temp).ConfigureAwait(false);
-            temp.Position = 0;
-            var clone = new StreamContent(temp);
-            if (content.Headers != null)
-            {
-                foreach (var h in content.Headers)
-                {
-                    clone.Headers.Add(h.Key, h.Value);
-                }
-            }
-            return clone;
-        }
-
         private static async Task<HttpResponse> ExecuteWithRetry(Uri endpoint, Dictionary<string, string> headers,
             HttpContent body, HttpMethod method,
             RequestContext requestContext, bool retry = true)
@@ -113,7 +97,7 @@ namespace Microsoft.Identity.Core.Http
                 {
                     // Since HttpContent would be disposed by underlying client.SendAsync(),
                     // we duplicate it so that we will have a copy in case we would need to retry
-                    clonedBody = await DeepCopy(body).ConfigureAwait(false);
+                    clonedBody = await Helpers.CoreHelpers.DeepCopy(body).ConfigureAwait(false);
                 }
                 response = await Execute(endpoint, headers, clonedBody, method).ConfigureAwait(false);
 
