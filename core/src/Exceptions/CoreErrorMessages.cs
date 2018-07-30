@@ -63,5 +63,7 @@ namespace Microsoft.Identity.Core
         public const string InvalidAuthorityOpenId = "invalid authority while getting the open id config endpoint";
         public const string UpnRequiredForAuthroityValidation = "UPN is required for ADFS authority validation.";
         public const string CannotFindTheAuthEndpont = "Cannot find the auth endpoint";
+
+        public const string FederatedServiceReturnedErrorTemplate = "Federated service at {0} returned error: {1}";
     }
 }
