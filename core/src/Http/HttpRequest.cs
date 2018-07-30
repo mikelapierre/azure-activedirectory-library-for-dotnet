@@ -107,7 +107,7 @@ namespace Microsoft.Identity.Core.Http
                 }
 
                 var msg = string.Format(CultureInfo.InvariantCulture,
-                    MsalErrorMessage.HttpRequestUnsuccessful,
+                    CoreErrorMessages.HttpRequestUnsuccessful,
                     (int) response.StatusCode, response.StatusCode);
                 requestContext.Logger.Info(msg);
                 requestContext.Logger.InfoPii(msg);
