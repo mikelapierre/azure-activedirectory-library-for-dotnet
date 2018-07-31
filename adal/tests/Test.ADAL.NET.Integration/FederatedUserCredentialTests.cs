@@ -60,6 +60,7 @@ namespace Test.ADAL.NET.Integration
             CoreHttpClientFactory.ReturnHttpClientForMocks = true;
             CoreHttpMessageHandlerFactory.ClearMockHandlers();
             ResetInstanceDiscovery();
+            CoreExceptionFactory.Instance = new AdalEceptionFactory();
         }
 
         public void ResetInstanceDiscovery()
